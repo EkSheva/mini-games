@@ -22,10 +22,8 @@ body {
     background-color: rgb(225, 255, 143);
     background-repeat: no-repeat;
     background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, top 0 right 0;
-    white-space: nowrap;
     height: 800px;
     
-
     &__title {
         color: rgb(32, 32, 39);
         font-size: 64px;
@@ -43,6 +41,7 @@ body {
         line-height: 32px;
         text-align: left;
         margin-bottom: 48px;
+        width: 720px;
     }
 
     &__button {
@@ -169,6 +168,7 @@ body {
 }
 
 .minigames {
+    padding-top: 46px;
     padding-bottom: 144px;
 }
 
@@ -178,7 +178,6 @@ body {
     font-weight: 700;
     line-height: 78px;
     text-align: left;
-    margin-top: 46px;
     margin-bottom: 72px;
 }
 
@@ -189,11 +188,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 500px;
 
     &__img {
         border-radius: 30px;
-        height: 100%;
+        width: 600px;
     }
 }
 
@@ -255,3 +253,5 @@ body {
     padding-top: 61px;
     padding-bottom: 60px;
 }
+
+@import "mobile";
