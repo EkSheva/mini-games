@@ -7,7 +7,6 @@
     .header {
         display: flex;
         flex-direction: column;
-        align-content: center;
         align-items: center;
         height: 700px;
         background-image: url(./img/Star2.png), url(./img/Star3.png), url(./img/Star4.png), url(./img/Star5.png), url(./img/Vector.png);
@@ -33,13 +32,14 @@
 
         &__button {
             font-size: 16px;
+            width: 285px;
         }
 
         &__button:hover:none {
             background: inherit;
         }
     }
-    
+  
     .main {
         background-image: none;
     }
