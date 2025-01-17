@@ -60,14 +60,14 @@ const  user = {
     isAdmin: true,
     age: 35
  };
- console.log(user['name']);
- console.log(user['age']);
+ console.log(user.name);
+ console.log(user.age);
  user['isAdmin'] = true;
 
  //Задание 10
  let greeting = "Привет";
  let name1 = prompt ('Введите Ваше имя?');
- let phrase = (`Привет, ${name1}!`);
+ let phrase = `Привет, ${name1}!`;
  alert (phrase);
 
 
