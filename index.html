@@ -12,7 +12,24 @@
     <link rel="stylesheet" href="style.css">
     <!--<script src="hw.js"></script> -->
     <!--<script src="hw2.js"></script>-->
-    <script src="hw3.js"></script>
+    <script src="hw5.js"></script>
+    <script>
+        function game1() {
+    const value = Math.floor(Math.random() * 101);
+    let number;
+    while ( value !== number) {
+        number = Number (prompt ("Попробуй угадать число от 0 до 100"));
+        if (value>number) {
+            alert ("Не угадал( Загаданное число больше!");
+            
+        } else if ( value<number) {
+            alert ("Не угадал( Загаданное число меньше!");
+        } else  {
+            break; 
+        }
+    }
+}
+    </script>
 </head>
 
 <body>
@@ -85,7 +102,7 @@
                 <div class="minigame">
                     <h3 class="minigame__name">Угадай число</h3>
                     <p class="minigame__desc">Попробуй угадать случайное число от 1 до 100.</p>
-                    <button class="minigame__button" type="submit"> Играть!</button>
+                    <button onclick="game1()" class="minigame__button" type="submit"> Играть!</button>
                 </div>
                 <img class="minigame-block__img" src="./img/game1.png" alt="Угадай число">
             </div>
@@ -109,7 +126,7 @@
                 <img class="minigame-block__img" src="./img/game5.png" alt="Камень, ножницы, бумага">
                 <div class="minigame">
                     <h3 class="minigame__name">Викторина</h3>
-                    <p class="minigame__desc">Отвечай на вопросы викториныс вариантами ответов.</p>
+                    <p class="minigame__desc">Отвечай на вопросы викторины с вариантами ответов.</p>
                     <button class="minigame__button" type="submit"> Играть!</button>
                 </div>
             </div>
