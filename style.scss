@@ -25,7 +25,7 @@ body {
     height: 800px;
     
     &__title {
-        color: rgb(32, 32, 39);
+        color: $color-text;
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -35,7 +35,7 @@ body {
     }
 
     &__text {
-        color: rgb(32, 32, 39);
+        color: $color-text;
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
@@ -46,10 +46,10 @@ body {
 
     &__button {
         box-sizing: border-box;
-        border: 1px solid rgb(32, 32, 39);
+        border: 1px solid $color-text;
         border-radius: 60px;
-        background: rgb(32, 32, 39);
-        color: rgb(255, 255, 255);
+        background: $color-text;
+        color:$color-text2;
         font-size: 24px;
         font-weight: 600;
         line-height: 141.69%;
@@ -61,13 +61,13 @@ body {
     }
 
     &__button:hover {
-        background: rgb(255, 255, 255);
-        color: rgb(32, 32, 39);
+        background:$color-text2;
+        color: $color-text;
     }
 }
 
 .main {
-    background: rgb(32, 32, 39);
+    background: $color-text;
     background-image: url(./img/Star11.png), url(./img/Star12.png), url(./img/Star1.png), url(./img/Star7.png), url(./img/Star6.png), url(./img/Star10.png), url(./img/Star8.png);
     background-position: 27.97px 864px, 45.18px 914px, right 0 top 94px, 1281.33px 1563px, 1326.54px 1596px, 1249px 4884px, 1319px 4836px;
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@ body {
 
 .aboutgames {
     &__title {
-        color: rgb(255, 255, 255);
+        color:$color-text2;
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -89,7 +89,7 @@ body {
     }
 
     &__text {
-        color: rgb(255, 255, 255);
+        color:$color-text2;
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
@@ -118,7 +118,7 @@ body {
 
 .game {
     border-radius: 30px;
-    background: rgb(255, 255, 255);
+    background:$color-text2;
     width: 378px;
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ body {
         border: 1px solid rgb(247, 247, 247, 1);
         border-radius: 52.58px;
         padding: (8px 16px 10px 16px);
-        color: rgb(32, 32, 39);
+        color: $color-text;
         font-size: 16px;
         font-weight: 500;
         line-height: 110%;
@@ -152,7 +152,7 @@ body {
     }
 
     &__name {
-        color: rgb(32, 32, 39);
+        color: $color-text;
         font-size: 32px;
         font-weight: 700;
         line-height: 39px;
@@ -182,7 +182,7 @@ body {
 }
 
 .minigames__title {
-    color: rgb(255, 255, 255);
+    color:$color-text2;
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
@@ -191,7 +191,7 @@ body {
 }
 
 .minigame-block {
-    background: rgb(255, 255, 255);
+    background:$color-text2;
     border-radius: 30px;
     margin-bottom: 32px;
     display: flex;
@@ -212,7 +212,7 @@ body {
     width: 600px;
 
     &__name {
-        color: rgb(32, 32, 39);
+        color: $color-text;
         font-size: 48px;
         font-weight: 700;
         line-height: 59px;
@@ -221,7 +221,7 @@ body {
     }
 
     &__desc {
-        color: rgb(32, 32, 39);
+        color: $color-text;
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
@@ -232,10 +232,10 @@ body {
     &__button {
         font: inherit;
         box-sizing: border-box;
-        border: 1px solid rgb(32, 32, 39);
+        border: 1px solid $color-text;
         border-radius: 60px;
-        background: rgb(32, 32, 39);
-        color: rgb(255, 255, 255);
+        background: $color-text;
+        color:$color-text2;
         font-size: 24px;
         font-weight: 600;
         line-height: 141.69%;
@@ -247,8 +247,8 @@ body {
     }
     
     &__button:hover {
-        background: rgb(255, 255, 255);
-        color: rgb(32, 32, 39);
+        background:$color-text2;
+        color: $color-text;
     }
 }
 
@@ -264,3 +264,4 @@ body {
 }
 
 @import "mobile";
+@import "vars";
