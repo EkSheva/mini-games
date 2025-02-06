@@ -2,7 +2,8 @@
 const numbers = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
-    if (numbers[i] == 10) break; 
+    if (numbers[i] === 10) 
+        break; 
 }
 
 // Задание 2
@@ -39,8 +40,8 @@ console.log(one);
 // Задание 6
 const sortArr = [9, 8, 7, 'a', 6, 5];
 sortArr.sort();
-// sortArr.pop();
-// console.log(sortArr);
+sortArr.pop();
+console.log(sortArr);
 
 const filteredArr = sortArr.filter(item => typeof item === 'number');
 console.log(filteredArr);
@@ -64,12 +65,21 @@ const joinLine = splitLine.join("");
 console.log(joinLine);
 
 // Задание 9
-let arrive = [[1, 2, 3],[4, 5, 6]];
-let newArrive = [...arrive[0], ...arrive[1]];
+const arrive = [[1, 2, 3],[4, 5, 6]];
+const newArrive = [...arrive[0], ...arrive[1]];
 console.log(newArrive);
 
 // Задание 10
-const sumNumbers = [ 5, 56, 51, 79, 1, 2, 6, 65, 14, 74];
+const sumNumbers = [ 5, 5, 5, 7, 1, 2, 6, 6, 1, 4];
+for (let i = 0; i <= 8; i++) {
+    console.log(sumNumbers[i] + sumNumbers[i+1]);
+}
+
+for (let i = 0; i < sumNumbers.length; i++) {
+if (sumNumbers[i+1]) {
+    console.log(sumNumbers[i] + sumNumbers[i+1]);
+}
+}
 
 // Задание 11
 function squearNumbers() {
@@ -121,5 +131,5 @@ function createRandomArray(length) {
 const newArray = createRandomArray(6);
 console.log(newArray);
 
-const sum = newArray.reduce((total, number) => (total + number))/6;
+const sum = newArray.reduce((total, number) => (total + number))/newArray.length;
 console.log(sum);
