@@ -131,5 +131,5 @@ function createRandomArray(length) {
 const newArray = createRandomArray(6);
 console.log(newArray);
 
-const sum = newArray.reduce((total, number) => (total + number))/newArray.length;
+const sum = newArray.reduce((total, number) => total + number, 0)/newArray.length;
 console.log(sum);
