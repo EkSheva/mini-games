@@ -7,13 +7,14 @@ console.log(string.toUpperCase());
 
 function stringArray() {
     let string = 'Хлеб';
-    const arr = ['Бородинский хлеб', 'Вусный хлеб', 'Столичный хлеб', 'Хлеб свежий', 'Хлеб утренний'];
-    const newArr = [];
-    arr.forEach((product) => {
-    if (product.toLowerCase().startsWith(string.toLowerCase())) {
-    newArr.push(product);
-    }
-    });
+    const arr = ['Бородинский хлеб', 'Вкусный хлеб', 'Столичный хлеб', 'Хлеб свежий', 'Хлеб утренний'];
+    const newArr = arr.filter(item => item.toLowerCase().startsWith(string.toLowerCase()));
+    // const newArr = [];
+    // arr.forEach((product) => {
+    // if (product.toLowerCase().startsWith(string.toLowerCase())) {
+    // newArr.push(product);
+    // }
+    // });
     return newArr;
 }
 console.log(stringArray());
