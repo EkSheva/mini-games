@@ -4,6 +4,9 @@
     if (answer === null || answer.trim() === "") {
         return;
     }
-    const arr = answer.split(""); reverse(); join("");
-    alert (arr);
-    }
+    const arr = answer.split("");
+    arr.reverse(); 
+    const result = arr.join("");
+
+    alert(result);
+}
