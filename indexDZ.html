@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">Lorem, ipsum dolor.</h1>
+    <button class="btn">Показать текст / Скрыть текст</button>
+    <button class="btnColor">Изменить цвет текста</button>
+    <button class="btnText">Изменить текст</button>
+    <button class="btnNewEl">Добавить элемент</button>
+    <button class="btnDel">Удалить параграф</button>
+    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="description1">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="description1">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="description1">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+
+    <script>
+        // Задача 1
+        const element = document.querySelector('.title');
+        const elementBtn = document.querySelector('.btn');
+        elementBtn.addEventListener('click', () => {
+            element.classList.toggle('hidden');
+        });
+
+        // Задача 2
+        const btnColor = document.querySelector('.btnColor');
+        btnColor.addEventListener('click', () => {
+            element.style.color = 'red';
+        });
+
+        // Задача 3
+        const btnText = document.querySelector('.btnText');
+        btnText.addEventListener('click', () => {
+            element.textContent = 'Привет, мир!';
+        });
+
+        // Задача 4
+        const allParagraf = document.querySelectorAll('.description');
+        allParagraf.forEach(description => {
+            description.textContent = 'Измененный текст';
+        });
+
+        // Задача 5
+        const allParagraf1 = document.querySelectorAll('.description1');
+        allParagraf1.forEach(description1 => {
+            description1.textContent = 'Новый текст';
+        });
+
+        // Задача 6
+        const btnNewEl = document.querySelector('.btnNewEl');
+        btnNewEl.addEventListener('click', () => {
+            const newP = document.createElement('p');
+            newP.textContent = 'Новый абзац';
+            document.body.appendChild(newP);
+        });
+
+        // Задача 7
+        const paragraf = document.querySelector('.description');
+        const btnDel = document.querySelector('.btnDel');
+        btnDel.addEventListener('click', () => {
+            paragraf.remove();
+        });
+    </script>
+</body>
+
+</html>
