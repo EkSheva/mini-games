@@ -9,9 +9,9 @@
         flex-direction: column;
         align-items: center;
         height: 648.66px;
-    background-image: url(./img/Star2-2.png), url(./img/Star3-2.png), url(./img/Star4-2.png), url(./img/Star5-2.png), url(./img/Vector.png);
-    background-position: 38px 97px, 92px 64px, calc(100% - 34px) calc(100% - 28px), calc(100% - 86px) calc(100% - 74px), top 0 right 0;
-    background-repeat: no-repeat;
+        background-image: url(./img/Star2-2.png), url(./img/Star3-2.png), url(./img/Star4-2.png), url(./img/Star5-2.png), url(./img/Vector.png);
+        background-position: 38px 97px, 92px 64px, calc(100% - 34px) calc(100% - 28px), calc(100% - 86px) calc(100% - 74px), top 0 right 0;
+        background-repeat: no-repeat;
         
         &__title {
             font-size: 40px;
@@ -86,11 +86,12 @@
 
     .minigame {
         padding: 29px 29px 32px 29px;
-        width: 249px;
+        width: 285px;
 
         &__name {
             font-size: 32px;
             line-height: 39px;
+            margin-bottom: 16px;
         }
 
         &__desc {
