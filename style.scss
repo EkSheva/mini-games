@@ -9,7 +9,7 @@ a {
 
 html {
     scroll-behavior: smooth;
-  }  
+}  
 
 body {
     font-family: "Montserrat", serif;
@@ -25,8 +25,8 @@ body {
     background-image: url(./img/Star2.png), url(./img/Star3.png), url(./img/Star4.png), url(./img/Star5.png), url(./img/Group.png);
     background-color: rgb(225, 255, 143);
     background-repeat: no-repeat;
-    background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, top 0 right 0;
-    height: 800px;
+    background-position: 63px 94px, 156px 69px,calc(100% - 344px) calc(100% - 59px), calc(100% - 455px) calc(100% - 135px) , top 0 right 0;
+    height: 720px;
     
     &__title {
         color: $color-text;
@@ -70,15 +70,46 @@ body {
     }
 }
 
+.liner {
+    overflow: hidden;
+    max-width:100%;
+    background-color: rgba(188, 236, 48, 1);
+  }
+  
+  .line {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 51px;
+    animation: scroll-left 20s linear infinite both;
+  }
+
+  @keyframes scroll-left {
+    from {
+     transform: translatex(0%);
+    }
+    to {
+      transform: translatex(-100%);
+    }
+  }
+
+  .line-el {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 30px;
+    line-height:33px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    text-align: left;
+    white-space: nowrap;
+  }
+
 .main {
     background: $color-text;
     background-image: url(./img/Star11.png), url(./img/Star12.png), url(./img/Star1.png), url(./img/Star7.png), url(./img/Star6.png), url(./img/Star10.png), url(./img/Star8.png);
     background-position: 27.97px 864px, 45.18px 914px, right 0 top 94px, 1281.33px 1563px, 1326.54px 1596px, 1249px 4884px, 1319px 4836px;
     background-repeat: no-repeat;
-}
-
-#aboutgames {
-    scroll-behavior: smooth;
 }
 
 .aboutgames {
@@ -248,6 +279,7 @@ body {
         padding-right: 66px;
         padding-top: 16px;
         padding-bottom: 16px;
+        cursor: pointer;
     }
     
     &__button:hover {
@@ -267,5 +299,6 @@ body {
     padding-bottom: 60px;
 }
 
-@import "mobile";
 @import "vars";
+@import "tadlet";
+@import "mobile";
