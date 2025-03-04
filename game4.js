@@ -18,15 +18,15 @@ function game4() {
                    }
                ];
   
-    let a = 0;
+    let counter = 0;
     for (let i= 0; i < quiz.length; i++) {
         unswers = Number(prompt(`Ответьте на вопрос: ${quiz[i].question}, используя варианты ответа: ${quiz[i].options} В ответе укажите номер верного варианта.`));
         if (unswers===quiz[i].correctAnswer) {
             alert ('Верно');
-            a++;
+            counter++;
         } else {
             alert ('Неверно');
         }
     }
-    alert (`Верных ответов ${a} из ${quiz.length}`); 
+    alert (`Верных ответов ${counter} из ${quiz.length}`); 
     }
