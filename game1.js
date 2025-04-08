@@ -14,5 +14,5 @@ function game1() {
             break; 
         }
     }
-    console.log (value);
+    console.log(value);
 }

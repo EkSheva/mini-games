@@ -7,6 +7,10 @@ a {
     text-decoration: none; 
 }
 
+html {
+    scroll-behavior: smooth;
+}  
+
 body {
     font-family: "Montserrat", serif;
 }
@@ -21,11 +25,11 @@ body {
     background-image: url(./img/Star2.png), url(./img/Star3.png), url(./img/Star4.png), url(./img/Star5.png), url(./img/Group.png);
     background-color: rgb(225, 255, 143);
     background-repeat: no-repeat;
-    background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, top 0 right 0;
-    height: 800px;
+    background-position: 63px 94px, 156px 69px,calc(100% - 344px) calc(100% - 59px), calc(100% - 455px) calc(100% - 135px) , top 0 right 0;
+    height: 720px;
     
     &__title {
-        color: $color-text;
+        color:  rgb(32, 32, 39);
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -35,7 +39,7 @@ body {
     }
 
     &__text {
-        color: $color-text;
+        color:  rgb(32, 32, 39);
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
@@ -46,10 +50,10 @@ body {
 
     &__button {
         box-sizing: border-box;
-        border: 1px solid $color-text;
+        border: 1px solid  rgb(32, 32, 39);
         border-radius: 60px;
-        background: $color-text;
-        color:$color-text2;
+        background:  rgb(32, 32, 39);
+        color:rgb(255, 255, 255);
         font-size: 24px;
         font-weight: 600;
         line-height: 141.69%;
@@ -61,25 +65,55 @@ body {
     }
 
     &__button:hover {
-        background:$color-text2;
-        color: $color-text;
+        background:rgb(255, 255, 255);
+        color: rgb(32, 32, 39)
     }
 }
 
+.liner {
+    overflow: hidden;
+    max-width:100%;
+    background-color: rgba(188, 236, 48, 1);
+}
+  
+.line {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 51px;
+    animation: scroll-left 20s linear infinite both;
+}
+
+@keyframes scroll-left {
+    from {
+     transform: translatex(0%);
+    }
+    to {
+      transform: translatex(-100%);
+    }
+}
+
+.line-el {
+    font-weight: 700;
+    font-size: 30px;
+    line-height:33px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    text-align: left;
+    white-space: nowrap;
+}
+
 .main {
-    background: $color-text;
+    background: rgb(32, 32, 39);
     background-image: url(./img/Star11.png), url(./img/Star12.png), url(./img/Star1.png), url(./img/Star7.png), url(./img/Star6.png), url(./img/Star10.png), url(./img/Star8.png);
     background-position: 27.97px 864px, 45.18px 914px, right 0 top 94px, 1281.33px 1563px, 1326.54px 1596px, 1249px 4884px, 1319px 4836px;
     background-repeat: no-repeat;
 }
 
-#aboutgames {
-    scroll-behavior: smooth;
-}
-
 .aboutgames {
     &__title {
-        color:$color-text2;
+        color:rgb(255, 255, 255);
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -89,7 +123,7 @@ body {
     }
 
     &__text {
-        color:$color-text2;
+        color:rgb(255, 255, 255);
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
@@ -118,7 +152,7 @@ body {
 
 .game {
     border-radius: 30px;
-    background:$color-text2;
+    background:rgb(255, 255, 255);
     width: 378px;
     display: flex;
     flex-direction: column;
@@ -142,7 +176,7 @@ body {
         border: 1px solid rgb(247, 247, 247, 1);
         border-radius: 52.58px;
         padding: (8px 16px 10px 16px);
-        color: $color-text;
+        color: rgb(32, 32, 39);
         font-size: 16px;
         font-weight: 500;
         line-height: 110%;
@@ -152,7 +186,7 @@ body {
     }
 
     &__name {
-        color: $color-text;
+        color: rgb(32, 32, 39);
         font-size: 32px;
         font-weight: 700;
         line-height: 39px;
@@ -182,7 +216,7 @@ body {
 }
 
 .minigames__title {
-    color:$color-text2;
+    color:rgb(255, 255, 255);
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
@@ -191,7 +225,7 @@ body {
 }
 
 .minigame-block {
-    background:$color-text2;
+    background:rgb(255, 255, 255);
     border-radius: 30px;
     margin-bottom: 32px;
     display: flex;
@@ -212,7 +246,7 @@ body {
     width: 600px;
 
     &__name {
-        color: $color-text;
+        color: rgb(32, 32, 39);
         font-size: 48px;
         font-weight: 700;
         line-height: 59px;
@@ -221,7 +255,7 @@ body {
     }
 
     &__desc {
-        color: $color-text;
+        color: rgb(32, 32, 39);
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
@@ -232,10 +266,10 @@ body {
     &__button {
         font: inherit;
         box-sizing: border-box;
-        border: 1px solid $color-text;
+        border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;
-        background: $color-text;
-        color:$color-text2;
+        background: rgb(32, 32, 39);
+        color:rgb(255, 255, 255);
         font-size: 24px;
         font-weight: 600;
         line-height: 141.69%;
@@ -244,11 +278,12 @@ body {
         padding-right: 66px;
         padding-top: 16px;
         padding-bottom: 16px;
+        cursor: pointer;
     }
     
     &__button:hover {
-        background:$color-text2;
-        color: $color-text;
+        background:rgb(255, 255, 255);
+        color: rgb(32, 32, 39);
     }
 }
 
@@ -263,5 +298,5 @@ body {
     padding-bottom: 60px;
 }
 
+@import "tadlet";
 @import "mobile";
-@import "vars";
